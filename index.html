@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>ArK Educations</title>
 </head>
 
 <body>
     <header class="background">
-        <nav class="navbar">
-            <ul class="nav-list">
-                <div class="logo"><img src="/img/img-white.jpg" alt="logo"></div>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#service">Services</a></li>
-                <li><a href="#contact">Contact Us</a></li>
+        <nav class="navbar h-nav-resp">
+            <ul class="nav-list v-class-resp">
+                <div class="logo"><img src="img/img-white.jpg" alt="logo"></div>
+                <li class="li-nav"><a href="#home">Home</a></li>
+                <li class="li-nav"><a href="#about">About</a></li>
+                <li class="li-nav"><a href="#service">Services</a></li>
+                <li class="li-nav"><a href="#contact">Contact Us</a></li>
             </ul>
-            <div class="rightNav">
+            <div class="rightNav v-class-resp">
                 <input type="text" name="search" id="search" placeholder="Search Here">
                 <img src="./img/search.svg" class="btn-sm" alt="search">
             </div>
+
         </nav>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
     </header>
     <main>
         <section class="background firstSection" id="home">
@@ -134,6 +140,10 @@
             </div>
         </section>
     </main>
+    <footer class="text-footer background">
+        Copyright &copy; 2027 www.ArkEducations.com - All Rights Reseverd
+    </footer>
+    <script src="./js/resp.js"></script>
 </body>
 
 </html>

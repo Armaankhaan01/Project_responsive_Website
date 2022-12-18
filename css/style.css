@@ -5,6 +5,7 @@
     margin: 0;
     scroll-behavior: smooth;
     /* border: 1px solid red; */
+
 }
 
 header {
@@ -17,6 +18,8 @@ header {
 .navbar {
     display: flex;
     align-items: center;
+    max-width: 100%;
+
 }
 
 .nav-list {
@@ -48,7 +51,8 @@ header {
 .nav-list li a {
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .nav-list li :hover {
@@ -126,6 +130,7 @@ header {
     color: white;
     cursor: pointer;
     font-weight: 200;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .btn-sm {
@@ -137,7 +142,7 @@ header {
 }
 
 .section {
-    height: 30vw;
+    height: 33vw;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -161,7 +166,8 @@ header {
 }
 
 .thumbnail img {
-    width: 250px !important;
+    width: 250px;
+    height: 250px;
     border: 2px solid black;
     border-radius: 10px;
     margin-top: 10px;
@@ -170,33 +176,146 @@ header {
 #contact {
     background-color: #f6f5e6;
     max-height: 90vh;
+
 }
 
 .text-formation {
     font-family: 'Ubuntu', sans-serif;
-    padding-top: 25px;
+    padding-top: 10px;
     text-align: center;
     font-size: 34px;
 }
 
 .form {
     margin-top: 25px;
-    max-width: 40vh;
+    max-width: 1000px;
+    max-height: 1000px;
     margin: auto;
 }
 
 .btn-dark {
     color: black;
-    border: 2px solid black;
+    border: 2px solid grey;
     background-color: white;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .text-input {
     font-family: 'Ubuntu', sans-serif;
     width: 100%;
+    height: fit-content;
     margin: 14px 2px;
     padding: 10px 12px;
     font-size: 16px;
     border: 2px solid grey;
     border-radius: 6px;
+}
+
+.text-footer {
+    font-family: 'Ubuntu', sans-serif;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+
+.burger {
+    display: none;
+    position: absolute;
+    top: 8px;
+    right: 5px;
+}
+
+.line {
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+@media screen and (max-width:1100px) {
+    .header {
+        position: none;
+    }
+
+    .nav-list {
+        flex-direction: column;
+    }
+
+    .navbar {
+        flex-direction: column;
+        height: 300px;
+        transition: all 0.7s ease-out;
+    }
+
+    .rightNav {
+        text-align: center;
+        width: 100%;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .h-nav-resp {
+        height: 62px;
+        pointer-events: none;
+    }
+
+    .v-class-resp {
+        pointer-events: none;
+        opacity: 0;
+    }
+
+    .li-nav {
+        padding: 10px;
+    }
+
+    .box-main {
+        flex-direction: column-reverse;
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .secondHalf {
+        width: 50%;
+    }
+
+    .logo img {
+        width: 30px;
+        height: 30px;
+        border: 2px solid white;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-top: 20px;
+    }
+
+    .section {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .form {
+        max-width: 60%;
+        height: 100%;
+    }
+
+    .text-big {
+        text-align: center;
+    }
+
+    .thumbnail img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .paras {
+        padding: 0px;
+        margin: 20px 0px;
+    }
+
 }
